@@ -116,13 +116,19 @@
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
+    <Reference Include="System.Messaging" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="AdminGiris.cpp" />
     <ClCompile Include="GirisEkrani.cpp" />
+    <ClCompile Include="MagazaAyarlari.cpp" />
     <ClCompile Include="PersonelGiris.cpp" />
+    <ClCompile Include="PersonelPaneli.cpp" />
+    <ClCompile Include="Satislar.cpp" />
+    <ClCompile Include="Siparisler.cpp" />
+    <ClCompile Include="Urunler.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="AdminGiris.h">
@@ -131,7 +137,22 @@
     <ClInclude Include="GirisEkrani.h">
       <FileType>CppForm</FileType>
     </ClInclude>
+    <ClInclude Include="MagazaAyarlari.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
     <ClInclude Include="PersonelGiris.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="PersonelPaneli.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="Satislar.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="Siparisler.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="Urunler.h">
       <FileType>CppForm</FileType>
     </ClInclude>
   </ItemGroup>
@@ -142,8 +163,23 @@
     <EmbeddedResource Include="GirisEkrani.resx">
       <DependentUpon>GirisEkrani.h</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="MagazaAyarlari.resx">
+      <DependentUpon>MagazaAyarlari.h</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="PersonelGiris.resx">
       <DependentUpon>PersonelGiris.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PersonelPaneli.resx">
+      <DependentUpon>PersonelPaneli.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Satislar.resx">
+      <DependentUpon>Satislar.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Siparisler.resx">
+      <DependentUpon>Siparisler.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Urunler.resx">
+      <DependentUpon>Urunler.h</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
