@@ -103,6 +103,8 @@ namespace ETicaretYönetimSistemi {
 			this->textBox5->Enabled = false;
 			this->textBox5->Location = System::Drawing::Point(422, 102);
 			this->textBox5->Name = L"textBox5";
+			this->textBox5->PasswordChar = '*';
+			this->textBox5->ReadOnly = true;
 			this->textBox5->Size = System::Drawing::Size(137, 20);
 			this->textBox5->TabIndex = 4;
 			// 
