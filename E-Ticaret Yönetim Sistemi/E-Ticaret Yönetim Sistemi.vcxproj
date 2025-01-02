@@ -122,16 +122,21 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="AdminGiris.cpp" />
+    <ClCompile Include="AlisverisEkrani.cpp" />
     <ClCompile Include="GirisEkrani.cpp" />
     <ClCompile Include="MagazaAyarlari.cpp" />
     <ClCompile Include="PersonelGiris.cpp" />
     <ClCompile Include="PersonelPaneli.cpp" />
     <ClCompile Include="Satislar.cpp" />
     <ClCompile Include="Siparisler.cpp" />
+    <ClCompile Include="SiparisSorgu.cpp" />
     <ClCompile Include="Urunler.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="AdminGiris.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="AlisverisEkrani.h">
       <FileType>CppForm</FileType>
     </ClInclude>
     <ClInclude Include="GirisEkrani.h">
@@ -152,6 +157,9 @@
     <ClInclude Include="Siparisler.h">
       <FileType>CppForm</FileType>
     </ClInclude>
+    <ClInclude Include="SiparisSorgu.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
     <ClInclude Include="Urunler.h">
       <FileType>CppForm</FileType>
     </ClInclude>
@@ -159,6 +167,9 @@
   <ItemGroup>
     <EmbeddedResource Include="AdminGiris.resx">
       <DependentUpon>AdminGiris.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AlisverisEkrani.resx">
+      <DependentUpon>AlisverisEkrani.h</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GirisEkrani.resx">
       <DependentUpon>GirisEkrani.h</DependentUpon>
@@ -177,6 +188,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Siparisler.resx">
       <DependentUpon>Siparisler.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SiparisSorgu.resx">
+      <DependentUpon>SiparisSorgu.h</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Urunler.resx">
       <DependentUpon>Urunler.h</DependentUpon>

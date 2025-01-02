@@ -1,6 +1,5 @@
 #pragma once
 
-
 namespace ETicaretYönetimSistemi {
 
 	using namespace System;
@@ -75,6 +74,7 @@ namespace ETicaretYönetimSistemi {
 	private: System::Windows::Forms::TextBox^ textBox5;
 	private: System::Windows::Forms::TextBox^ textBox6;
 	private: System::Windows::Forms::Button^ button4;
+	private: System::Windows::Forms::Button^ button7;
 	protected:
 
 
@@ -121,6 +121,7 @@ namespace ETicaretYönetimSistemi {
 			this->textBox5 = (gcnew System::Windows::Forms::TextBox());
 			this->textBox6 = (gcnew System::Windows::Forms::TextBox());
 			this->button4 = (gcnew System::Windows::Forms::Button());
+			this->button7 = (gcnew System::Windows::Forms::Button());
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->dataGridView1))->BeginInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox1))->BeginInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->numericUpDown1))->BeginInit();
@@ -142,6 +143,7 @@ namespace ETicaretYönetimSistemi {
 			this->dataGridView1->ColumnHeadersHeightSizeMode = System::Windows::Forms::DataGridViewColumnHeadersHeightSizeMode::AutoSize;
 			this->dataGridView1->Location = System::Drawing::Point(326, 12);
 			this->dataGridView1->Name = L"dataGridView1";
+			this->dataGridView1->RowHeadersWidth = 51;
 			this->dataGridView1->RowTemplate->Height = 24;
 			this->dataGridView1->SelectionMode = System::Windows::Forms::DataGridViewSelectionMode::FullRowSelect;
 			this->dataGridView1->Size = System::Drawing::Size(528, 402);
@@ -230,6 +232,7 @@ namespace ETicaretYönetimSistemi {
 			this->pictureBox1->SizeMode = System::Windows::Forms::PictureBoxSizeMode::StretchImage;
 			this->pictureBox1->TabIndex = 3;
 			this->pictureBox1->TabStop = false;
+			this->pictureBox1->Click += gcnew System::EventHandler(this, &Urunler::pictureBox1_Click);
 			// 
 			// button1
 			// 
@@ -353,12 +356,23 @@ namespace ETicaretYönetimSistemi {
 			this->button4->UseVisualStyleBackColor = true;
 			this->button4->Click += gcnew System::EventHandler(this, &Urunler::button4_Click);
 			// 
+			// button7
+			// 
+			this->button7->Location = System::Drawing::Point(71, 380);
+			this->button7->Name = L"button7";
+			this->button7->Size = System::Drawing::Size(168, 23);
+			this->button7->TabIndex = 11;
+			this->button7->Text = L"Satýrlarý Temizle";
+			this->button7->UseVisualStyleBackColor = true;
+			this->button7->Click += gcnew System::EventHandler(this, &Urunler::button7_Click);
+			// 
 			// Urunler
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(9, 16);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->BackColor = System::Drawing::Color::Orange;
 			this->ClientSize = System::Drawing::Size(867, 426);
+			this->Controls->Add(this->button7);
 			this->Controls->Add(this->label6);
 			this->Controls->Add(this->button6);
 			this->Controls->Add(this->button5);
@@ -384,7 +398,7 @@ namespace ETicaretYönetimSistemi {
 			this->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 9.75F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(162)));
 			this->Name = L"Urunler";
-			this->Text = L"Urunler";
+			this->Text = L" ";
 			this->Load += gcnew System::EventHandler(this, &Urunler::Urunler_Load);
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->dataGridView1))->EndInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox1))->EndInit();
@@ -444,6 +458,8 @@ private: System::Void button2_Click_1(System::Object^ sender, System::EventArgs^
 	this->textBox6->Text = "";
 
 	ListeyiGuncelle();
+
+	
 }
 private: System::Void dataGridView1_CellEnter(System::Object^ sender, System::Windows::Forms::DataGridViewCellEventArgs^ e) {
 	textBox1->Text = dataGridView1->CurrentRow->Cells[0]->Value->ToString();
@@ -528,6 +544,16 @@ private: System::Void button4_Click(System::Object^ sender, System::EventArgs^ e
 	cmd->ExecuteNonQuery();
 	con.Close();
 	ListeyiGuncelle();
+}
+private: System::Void pictureBox1_Click(System::Object^ sender, System::EventArgs^ e) {
+}
+private: System::Void button7_Click(System::Object^ sender, System::EventArgs^ e) {
+	textBox1->Text = "";
+	textBox2->Text = "";
+	textBox3->Text = "";
+	textBox4->Text = "";
+	textBox5->Text = "";
+	textBox6->Text = "";
 }
 };
 }
