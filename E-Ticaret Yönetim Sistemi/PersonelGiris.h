@@ -168,7 +168,8 @@ namespace ETicaretYönetimSistemi {
 
 		if (result > 0)
 		{
-			PersonelPaneli^ form = gcnew PersonelPaneli();
+			String^ username = textBox2->Text;
+			PersonelPaneli^ form = gcnew PersonelPaneli(username);
 			form->Show();
 			this->Hide();
 		}

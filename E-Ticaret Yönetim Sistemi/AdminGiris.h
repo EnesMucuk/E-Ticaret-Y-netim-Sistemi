@@ -1,5 +1,5 @@
 #pragma once
-#include "PersonelPaneli.h"
+#include "AdminPaneli.h"
 
 namespace ETicaretYönetimSistemi {
 
@@ -169,8 +169,9 @@ private: System::Void button1_Click(System::Object^ sender, System::EventArgs^ e
 	int result = (int)cmd->ExecuteScalar();
 
 	if (result > 0)
-	{
-		PersonelPaneli^ form = gcnew PersonelPaneli();
+	{	
+		String^ username = this->textBox2->Text;
+		AdminPaneli^ form = gcnew AdminPaneli(username);
 		form->Show();
 		this->Hide();
 	}

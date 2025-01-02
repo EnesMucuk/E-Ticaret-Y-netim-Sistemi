@@ -78,13 +78,16 @@ namespace ETicaretYönetimSistemi {
 			// 
 			// dataGridView1
 			// 
+			this->dataGridView1->BackgroundColor = System::Drawing::Color::DodgerBlue;
 			this->dataGridView1->ColumnHeadersHeightSizeMode = System::Windows::Forms::DataGridViewColumnHeadersHeightSizeMode::AutoSize;
-			this->dataGridView1->Location = System::Drawing::Point(-1, 0);
+			this->dataGridView1->GridColor = System::Drawing::SystemColors::ControlDarkDark;
+			this->dataGridView1->Location = System::Drawing::Point(11, 11);
+			this->dataGridView1->Margin = System::Windows::Forms::Padding(2);
 			this->dataGridView1->Name = L"dataGridView1";
 			this->dataGridView1->RowHeadersWidth = 51;
 			this->dataGridView1->RowTemplate->Height = 24;
 			this->dataGridView1->SelectionMode = System::Windows::Forms::DataGridViewSelectionMode::FullRowSelect;
-			this->dataGridView1->Size = System::Drawing::Size(1157, 318);
+			this->dataGridView1->Size = System::Drawing::Size(847, 258);
 			this->dataGridView1->TabIndex = 0;
 			this->dataGridView1->CellContentClick += gcnew System::Windows::Forms::DataGridViewCellEventHandler(this, &Siparisler::dataGridView1_CellContentClick);
 			this->dataGridView1->CellEnter += gcnew System::Windows::Forms::DataGridViewCellEventHandler(this, &Siparisler::dataGridView1_CellEnter);
@@ -92,17 +95,19 @@ namespace ETicaretYönetimSistemi {
 			// textBox1
 			// 
 			this->textBox1->Enabled = false;
-			this->textBox1->Location = System::Drawing::Point(12, 350);
+			this->textBox1->Location = System::Drawing::Point(11, 299);
+			this->textBox1->Margin = System::Windows::Forms::Padding(2);
 			this->textBox1->Name = L"textBox1";
-			this->textBox1->Size = System::Drawing::Size(175, 22);
+			this->textBox1->Size = System::Drawing::Size(157, 20);
 			this->textBox1->TabIndex = 2;
 			this->textBox1->TextChanged += gcnew System::EventHandler(this, &Siparisler::textBox1_TextChanged);
 			// 
 			// button1
 			// 
-			this->button1->Location = System::Drawing::Point(60, 408);
+			this->button1->Location = System::Drawing::Point(47, 347);
+			this->button1->Margin = System::Windows::Forms::Padding(2);
 			this->button1->Name = L"button1";
-			this->button1->Size = System::Drawing::Size(75, 23);
+			this->button1->Size = System::Drawing::Size(81, 19);
 			this->button1->TabIndex = 3;
 			this->button1->Text = L"Güncelle";
 			this->button1->UseVisualStyleBackColor = true;
@@ -115,22 +120,22 @@ namespace ETicaretYönetimSistemi {
 				L"Sipariþ Alýndý", L"Hazýrlanýyor", L"Kargoya Teslim Edildi",
 					L"Daðýtýmda", L"Teslim Edildi"
 			});
-			this->comboBox1->Location = System::Drawing::Point(12, 378);
+			this->comboBox1->Location = System::Drawing::Point(11, 322);
+			this->comboBox1->Margin = System::Windows::Forms::Padding(2);
 			this->comboBox1->Name = L"comboBox1";
-			this->comboBox1->Size = System::Drawing::Size(175, 24);
+			this->comboBox1->Size = System::Drawing::Size(157, 21);
 			this->comboBox1->TabIndex = 4;
 			// 
 			// Siparisler
 			// 
-			this->AutoScaleDimensions = System::Drawing::SizeF(8, 16);
+			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
-			this->BackColor = System::Drawing::Color::Yellow;
-			this->ClientSize = System::Drawing::Size(1156, 524);
+			this->BackColor = System::Drawing::Color::DodgerBlue;
+			this->ClientSize = System::Drawing::Size(867, 426);
 			this->Controls->Add(this->comboBox1);
 			this->Controls->Add(this->button1);
 			this->Controls->Add(this->textBox1);
 			this->Controls->Add(this->dataGridView1);
-			this->Margin = System::Windows::Forms::Padding(4);
 			this->Name = L"Siparisler";
 			this->Text = L"Siparisler";
 			this->Load += gcnew System::EventHandler(this, &Siparisler::Siparisler_Load);

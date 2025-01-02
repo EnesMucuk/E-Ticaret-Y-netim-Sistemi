@@ -122,10 +122,13 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="AdminGiris.cpp" />
+    <ClCompile Include="AdminPaneli.cpp" />
     <ClCompile Include="AlisverisEkrani.cpp" />
     <ClCompile Include="GirisEkrani.cpp" />
     <ClCompile Include="MagazaAyarlari.cpp" />
+    <ClCompile Include="PersonelBilgi.cpp" />
     <ClCompile Include="PersonelGiris.cpp" />
+    <ClCompile Include="PersonelKontrolEkrani.cpp" />
     <ClCompile Include="PersonelPaneli.cpp" />
     <ClCompile Include="Satislar.cpp" />
     <ClCompile Include="Siparisler.cpp" />
@@ -134,6 +137,9 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="AdminGiris.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="AdminPaneli.h">
       <FileType>CppForm</FileType>
     </ClInclude>
     <ClInclude Include="AlisverisEkrani.h">
@@ -145,7 +151,13 @@
     <ClInclude Include="MagazaAyarlari.h">
       <FileType>CppForm</FileType>
     </ClInclude>
+    <ClInclude Include="PersonelBilgi.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
     <ClInclude Include="PersonelGiris.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="PersonelKontrolEkrani.h">
       <FileType>CppForm</FileType>
     </ClInclude>
     <ClInclude Include="PersonelPaneli.h">
@@ -168,6 +180,9 @@
     <EmbeddedResource Include="AdminGiris.resx">
       <DependentUpon>AdminGiris.h</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="AdminPaneli.resx">
+      <DependentUpon>AdminPaneli.h</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="AlisverisEkrani.resx">
       <DependentUpon>AlisverisEkrani.h</DependentUpon>
     </EmbeddedResource>
@@ -177,8 +192,14 @@
     <EmbeddedResource Include="MagazaAyarlari.resx">
       <DependentUpon>MagazaAyarlari.h</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="PersonelBilgi.resx">
+      <DependentUpon>PersonelBilgi.h</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="PersonelGiris.resx">
       <DependentUpon>PersonelGiris.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PersonelKontrolEkrani.resx">
+      <DependentUpon>PersonelKontrolEkrani.h</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PersonelPaneli.resx">
       <DependentUpon>PersonelPaneli.h</DependentUpon>

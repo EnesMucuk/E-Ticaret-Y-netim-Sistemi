@@ -73,18 +73,16 @@ namespace ETicaretYönetimSistemi {
 			// 
 			// textBox1
 			// 
-			this->textBox1->Location = System::Drawing::Point(287, 225);
-			this->textBox1->Margin = System::Windows::Forms::Padding(4, 4, 4, 4);
+			this->textBox1->Location = System::Drawing::Point(215, 183);
 			this->textBox1->Name = L"textBox1";
-			this->textBox1->Size = System::Drawing::Size(181, 22);
+			this->textBox1->Size = System::Drawing::Size(137, 20);
 			this->textBox1->TabIndex = 0;
 			// 
 			// button1
 			// 
-			this->button1->Location = System::Drawing::Point(315, 274);
-			this->button1->Margin = System::Windows::Forms::Padding(4, 4, 4, 4);
+			this->button1->Location = System::Drawing::Point(236, 223);
 			this->button1->Name = L"button1";
-			this->button1->Size = System::Drawing::Size(127, 28);
+			this->button1->Size = System::Drawing::Size(95, 23);
 			this->button1->TabIndex = 1;
 			this->button1->Text = L"Ara";
 			this->button1->UseVisualStyleBackColor = true;
@@ -96,10 +94,9 @@ namespace ETicaretYönetimSistemi {
 			this->label1->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(162)));
 			this->label1->ForeColor = System::Drawing::SystemColors::ControlDarkDark;
-			this->label1->Location = System::Drawing::Point(729, 128);
-			this->label1->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
+			this->label1->Location = System::Drawing::Point(547, 104);
 			this->label1->Name = L"label1";
-			this->label1->Size = System::Drawing::Size(139, 25);
+			this->label1->Size = System::Drawing::Size(113, 20);
 			this->label1->TabIndex = 2;
 			this->label1->Text = L"Sipariþ Alýndý";
 			this->label1->Click += gcnew System::EventHandler(this, &SiparisSorgu::label1_Click);
@@ -110,10 +107,9 @@ namespace ETicaretYönetimSistemi {
 			this->label2->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(162)));
 			this->label2->ForeColor = System::Drawing::SystemColors::ControlDarkDark;
-			this->label2->Location = System::Drawing::Point(735, 208);
-			this->label2->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
+			this->label2->Location = System::Drawing::Point(551, 169);
 			this->label2->Name = L"label2";
-			this->label2->Size = System::Drawing::Size(126, 25);
+			this->label2->Size = System::Drawing::Size(103, 20);
 			this->label2->TabIndex = 2;
 			this->label2->Text = L"Hazýrlanýyor";
 			this->label2->Click += gcnew System::EventHandler(this, &SiparisSorgu::label2_Click);
@@ -124,10 +120,9 @@ namespace ETicaretYönetimSistemi {
 			this->label3->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(162)));
 			this->label3->ForeColor = System::Drawing::SystemColors::ControlDarkDark;
-			this->label3->Location = System::Drawing::Point(689, 278);
-			this->label3->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
+			this->label3->Location = System::Drawing::Point(517, 226);
 			this->label3->Name = L"label3";
-			this->label3->Size = System::Drawing::Size(222, 25);
+			this->label3->Size = System::Drawing::Size(179, 20);
 			this->label3->TabIndex = 2;
 			this->label3->Text = L"Kargoya Teslim Edildi";
 			// 
@@ -137,10 +132,9 @@ namespace ETicaretYönetimSistemi {
 			this->label4->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(162)));
 			this->label4->ForeColor = System::Drawing::SystemColors::ControlDarkDark;
-			this->label4->Location = System::Drawing::Point(735, 446);
-			this->label4->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
+			this->label4->Location = System::Drawing::Point(551, 362);
 			this->label4->Name = L"label4";
-			this->label4->Size = System::Drawing::Size(135, 25);
+			this->label4->Size = System::Drawing::Size(109, 20);
 			this->label4->TabIndex = 2;
 			this->label4->Text = L"Teslim Edildi";
 			// 
@@ -150,28 +144,25 @@ namespace ETicaretYönetimSistemi {
 			this->label5->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(162)));
 			this->label5->ForeColor = System::Drawing::SystemColors::ControlDarkDark;
-			this->label5->Location = System::Drawing::Point(747, 359);
-			this->label5->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
+			this->label5->Location = System::Drawing::Point(560, 292);
 			this->label5->Name = L"label5";
-			this->label5->Size = System::Drawing::Size(108, 25);
+			this->label5->Size = System::Drawing::Size(90, 20);
 			this->label5->TabIndex = 2;
 			this->label5->Text = L"Daðýtýmda";
 			// 
 			// label6
 			// 
 			this->label6->AutoSize = true;
-			this->label6->Location = System::Drawing::Point(1136, 64);
-			this->label6->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
+			this->label6->Location = System::Drawing::Point(852, 52);
 			this->label6->Name = L"label6";
-			this->label6->Size = System::Drawing::Size(0, 16);
+			this->label6->Size = System::Drawing::Size(0, 13);
 			this->label6->TabIndex = 3;
 			// 
 			// button2
 			// 
-			this->button2->Location = System::Drawing::Point(315, 326);
-			this->button2->Margin = System::Windows::Forms::Padding(4, 4, 4, 4);
+			this->button2->Location = System::Drawing::Point(236, 265);
 			this->button2->Name = L"button2";
-			this->button2->Size = System::Drawing::Size(127, 28);
+			this->button2->Size = System::Drawing::Size(95, 23);
 			this->button2->TabIndex = 4;
 			this->button2->Text = L"Yeni Sorgu";
 			this->button2->UseVisualStyleBackColor = true;
@@ -179,10 +170,10 @@ namespace ETicaretYönetimSistemi {
 			// 
 			// SiparisSorgu
 			// 
-			this->AutoScaleDimensions = System::Drawing::SizeF(8, 16);
+			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
-			this->BackColor = System::Drawing::Color::Yellow;
-			this->ClientSize = System::Drawing::Size(1227, 588);
+			this->BackColor = System::Drawing::Color::DodgerBlue;
+			this->ClientSize = System::Drawing::Size(920, 478);
 			this->Controls->Add(this->button2);
 			this->Controls->Add(this->label6);
 			this->Controls->Add(this->label5);
@@ -192,7 +183,6 @@ namespace ETicaretYönetimSistemi {
 			this->Controls->Add(this->label1);
 			this->Controls->Add(this->button1);
 			this->Controls->Add(this->textBox1);
-			this->Margin = System::Windows::Forms::Padding(4, 4, 4, 4);
 			this->Name = L"SiparisSorgu";
 			this->StartPosition = System::Windows::Forms::FormStartPosition::CenterScreen;
 			this->Text = L"SiparisSorgu";

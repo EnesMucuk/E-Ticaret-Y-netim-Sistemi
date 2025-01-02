@@ -137,8 +137,7 @@ namespace ETicaretYönetimSistemi {
 			// 
 			// dataGridView1
 			// 
-			this->dataGridView1->BackgroundColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(1)),
-				static_cast<System::Int32>(static_cast<System::Byte>(121)), static_cast<System::Int32>(static_cast<System::Byte>(192)));
+			this->dataGridView1->BackgroundColor = System::Drawing::Color::DodgerBlue;
 			this->dataGridView1->ClipboardCopyMode = System::Windows::Forms::DataGridViewClipboardCopyMode::Disable;
 			this->dataGridView1->ColumnHeadersHeightSizeMode = System::Windows::Forms::DataGridViewColumnHeadersHeightSizeMode::AutoSize;
 			this->dataGridView1->Location = System::Drawing::Point(326, 12);
@@ -370,7 +369,7 @@ namespace ETicaretYönetimSistemi {
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(9, 16);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
-			this->BackColor = System::Drawing::Color::Orange;
+			this->BackColor = System::Drawing::Color::DodgerBlue;
 			this->ClientSize = System::Drawing::Size(867, 426);
 			this->Controls->Add(this->button7);
 			this->Controls->Add(this->label6);

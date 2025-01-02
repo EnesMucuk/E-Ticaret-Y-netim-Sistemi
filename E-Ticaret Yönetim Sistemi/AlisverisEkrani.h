@@ -70,6 +70,8 @@ namespace ETicaretYönetimSistemi {
 	private: System::Windows::Forms::Label^ label7;
 	private: System::Windows::Forms::Label^ label8;
 	private: System::Windows::Forms::Button^ button2;
+	private: System::Windows::Forms::Label^ label9;
+	private: System::Windows::Forms::Timer^ timer1;
 
 
 
@@ -123,6 +125,8 @@ namespace ETicaretYönetimSistemi {
 			this->label7 = (gcnew System::Windows::Forms::Label());
 			this->label8 = (gcnew System::Windows::Forms::Label());
 			this->button2 = (gcnew System::Windows::Forms::Button());
+			this->label9 = (gcnew System::Windows::Forms::Label());
+			this->timer1 = (gcnew System::Windows::Forms::Timer(this->components));
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->numericUpDown1))->BeginInit();
 			this->SuspendLayout();
 			// 
@@ -262,15 +266,19 @@ namespace ETicaretYönetimSistemi {
 			// label1
 			// 
 			this->label1->AutoSize = true;
-			this->label1->Location = System::Drawing::Point(976, 286);
+			this->label1->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 8.25F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(162)));
+			this->label1->Location = System::Drawing::Point(971, 286);
 			this->label1->Name = L"label1";
-			this->label1->Size = System::Drawing::Size(78, 13);
+			this->label1->Size = System::Drawing::Size(92, 13);
 			this->label1->TabIndex = 7;
 			this->label1->Text = L"Genell Toplam:";
 			// 
 			// label2
 			// 
 			this->label2->AutoSize = true;
+			this->label2->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 8.25F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(162)));
 			this->label2->Location = System::Drawing::Point(1069, 286);
 			this->label2->Name = L"label2";
 			this->label2->Size = System::Drawing::Size(0, 13);
@@ -309,9 +317,11 @@ namespace ETicaretYönetimSistemi {
 			// label3
 			// 
 			this->label3->AutoSize = true;
+			this->label3->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 8.25F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(162)));
 			this->label3->Location = System::Drawing::Point(607, 338);
 			this->label3->Name = L"label3";
-			this->label3->Size = System::Drawing::Size(20, 13);
+			this->label3->Size = System::Drawing::Size(22, 13);
 			this->label3->TabIndex = 13;
 			this->label3->Text = L"Ad";
 			this->label3->Click += gcnew System::EventHandler(this, &AlisverisEkrani::label3_Click);
@@ -319,18 +329,22 @@ namespace ETicaretYönetimSistemi {
 			// label4
 			// 
 			this->label4->AutoSize = true;
+			this->label4->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 8.25F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(162)));
 			this->label4->Location = System::Drawing::Point(607, 392);
 			this->label4->Name = L"label4";
-			this->label4->Size = System::Drawing::Size(37, 13);
+			this->label4->Size = System::Drawing::Size(42, 13);
 			this->label4->TabIndex = 13;
 			this->label4->Text = L"Soyad";
 			// 
 			// label5
 			// 
 			this->label5->AutoSize = true;
+			this->label5->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 8.25F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(162)));
 			this->label5->Location = System::Drawing::Point(607, 445);
 			this->label5->Name = L"label5";
-			this->label5->Size = System::Drawing::Size(43, 13);
+			this->label5->Size = System::Drawing::Size(50, 13);
 			this->label5->TabIndex = 13;
 			this->label5->Text = L"Telefon";
 			// 
@@ -345,18 +359,22 @@ namespace ETicaretYönetimSistemi {
 			// label6
 			// 
 			this->label6->AutoSize = true;
+			this->label6->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 8.25F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(162)));
 			this->label6->Location = System::Drawing::Point(607, 493);
 			this->label6->Name = L"label6";
-			this->label6->Size = System::Drawing::Size(35, 13);
+			this->label6->Size = System::Drawing::Size(41, 13);
 			this->label6->TabIndex = 13;
 			this->label6->Text = L"E-mail";
 			// 
 			// label7
 			// 
 			this->label7->AutoSize = true;
+			this->label7->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 8.25F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(162)));
 			this->label7->Location = System::Drawing::Point(780, 338);
 			this->label7->Name = L"label7";
-			this->label7->Size = System::Drawing::Size(34, 13);
+			this->label7->Size = System::Drawing::Size(39, 13);
 			this->label7->TabIndex = 13;
 			this->label7->Text = L"Adres";
 			this->label7->Click += gcnew System::EventHandler(this, &AlisverisEkrani::label3_Click);
@@ -364,9 +382,11 @@ namespace ETicaretYönetimSistemi {
 			// label8
 			// 
 			this->label8->AutoSize = true;
+			this->label8->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 8.25F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(162)));
 			this->label8->Location = System::Drawing::Point(953, 338);
 			this->label8->Name = L"label8";
-			this->label8->Size = System::Drawing::Size(35, 13);
+			this->label8->Size = System::Drawing::Size(40, 13);
 			this->label8->TabIndex = 13;
 			this->label8->Text = L"Sepet";
 			this->label8->Click += gcnew System::EventHandler(this, &AlisverisEkrani::label3_Click);
@@ -381,12 +401,28 @@ namespace ETicaretYönetimSistemi {
 			this->button2->UseVisualStyleBackColor = true;
 			this->button2->Click += gcnew System::EventHandler(this, &AlisverisEkrani::button2_Click);
 			// 
+			// label9
+			// 
+			this->label9->AutoSize = true;
+			this->label9->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 8.25F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(162)));
+			this->label9->Location = System::Drawing::Point(1014, 614);
+			this->label9->Name = L"label9";
+			this->label9->Size = System::Drawing::Size(41, 13);
+			this->label9->TabIndex = 15;
+			this->label9->Text = L"label9";
+			// 
+			// timer1
+			// 
+			this->timer1->Tick += gcnew System::EventHandler(this, &AlisverisEkrani::timer1_Tick);
+			// 
 			// AlisverisEkrani
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
-			this->BackColor = System::Drawing::Color::DeepSkyBlue;
+			this->BackColor = System::Drawing::Color::DodgerBlue;
 			this->ClientSize = System::Drawing::Size(1134, 636);
+			this->Controls->Add(this->label9);
 			this->Controls->Add(this->button2);
 			this->Controls->Add(this->label5);
 			this->Controls->Add(this->label6);
@@ -420,6 +456,7 @@ namespace ETicaretYönetimSistemi {
 		}
 #pragma endregion
 	private: System::Void AlisverisEkrani_Load(System::Object^ sender, System::EventArgs^ e) {
+		timer1->Start();
 		String^ connectionString = "Data Source=ENES\\SQLEXPRESS;Initial Catalog=DbEticaretSistemi;Integrated Security=SSPI";
 
 		SqlConnection^ baglanti = gcnew SqlConnection(connectionString);
@@ -486,6 +523,7 @@ private: System::Void button1_Click(System::Object^ sender, System::EventArgs^ e
 		Decimal fiyat = Convert::ToDecimal(textBox2->Text);
 		Decimal adet = numericUpDown1->Value;
 		Decimal toplam = fiyat * adet;
+
 
 		tutar += (Double)toplam;
 		label2->Text = tutar.ToString();
@@ -599,6 +637,20 @@ private: System::Void button2_Click(System::Object^ sender, System::EventArgs^ e
 	this->maskedTextBox1->Text = "";
 	this->richTextBox1->Text = "";
 	this->richTextBox2->Text = "";
+
+
+	String^ connectionString2 = "Data Source=ENES\\SQLEXPRESS;Initial Catalog=DbEticaretSistemi;Integrated Security=True;Connect Timeout=60;Encrypt=True;TrustServerCertificate=True";
+	SqlConnection con2(connectionString2);
+	con2.Open();
+
+	String^ sqlQuery2 = "Insert into Satislar values ('" + sayi.ToString() + "','" + this->label9->Text + "','" + this->label2->Text + "','" + sepet + "')";
+	SqlCommand cmd2(sqlQuery2, % con2);
+	cmd2.ExecuteNonQuery();
+	con2.Close();
+}
+private: System::Void timer1_Tick(System::Object^ sender, System::EventArgs^ e) {
+	DateTime now = DateTime::Now;
+	label9->Text = now.ToString();
 }
 };
 }
