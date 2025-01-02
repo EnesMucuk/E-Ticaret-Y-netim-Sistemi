@@ -112,7 +112,7 @@ namespace ETicaretYönetimSistemi {
 			this->pictureBox5->BackColor = System::Drawing::Color::DodgerBlue;
 			this->pictureBox5->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox5.BackgroundImage")));
 			this->pictureBox5->BackgroundImageLayout = System::Windows::Forms::ImageLayout::Stretch;
-			this->pictureBox5->Location = System::Drawing::Point(600, 55);
+			this->pictureBox5->Location = System::Drawing::Point(596, 54);
 			this->pictureBox5->Margin = System::Windows::Forms::Padding(2);
 			this->pictureBox5->Name = L"pictureBox5";
 			this->pictureBox5->Size = System::Drawing::Size(60, 65);
@@ -125,7 +125,7 @@ namespace ETicaretYönetimSistemi {
 			this->button5->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
 			this->button5->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 11.25F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(162)));
-			this->button5->Location = System::Drawing::Point(555, 9);
+			this->button5->Location = System::Drawing::Point(551, 8);
 			this->button5->Margin = System::Windows::Forms::Padding(2);
 			this->button5->Name = L"button5";
 			this->button5->Size = System::Drawing::Size(150, 162);
@@ -162,7 +162,7 @@ namespace ETicaretYönetimSistemi {
 			this->pictureBox6->BackColor = System::Drawing::Color::DodgerBlue;
 			this->pictureBox6->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox6.BackgroundImage")));
 			this->pictureBox6->BackgroundImageLayout = System::Windows::Forms::ImageLayout::Stretch;
-			this->pictureBox6->Location = System::Drawing::Point(727, 26);
+			this->pictureBox6->Location = System::Drawing::Point(723, 25);
 			this->pictureBox6->Margin = System::Windows::Forms::Padding(2);
 			this->pictureBox6->Name = L"pictureBox6";
 			this->pictureBox6->Size = System::Drawing::Size(38, 41);
@@ -174,7 +174,7 @@ namespace ETicaretYönetimSistemi {
 			this->pictureBox8->BackColor = System::Drawing::Color::DodgerBlue;
 			this->pictureBox8->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox8.BackgroundImage")));
 			this->pictureBox8->BackgroundImageLayout = System::Windows::Forms::ImageLayout::Stretch;
-			this->pictureBox8->Location = System::Drawing::Point(727, 115);
+			this->pictureBox8->Location = System::Drawing::Point(723, 114);
 			this->pictureBox8->Margin = System::Windows::Forms::Padding(2);
 			this->pictureBox8->Name = L"pictureBox8";
 			this->pictureBox8->Size = System::Drawing::Size(38, 41);
@@ -187,7 +187,7 @@ namespace ETicaretYönetimSistemi {
 			this->button8->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
 			this->button8->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 6, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(162)));
-			this->button8->Location = System::Drawing::Point(721, 100);
+			this->button8->Location = System::Drawing::Point(717, 97);
 			this->button8->Margin = System::Windows::Forms::Padding(2);
 			this->button8->Name = L"button8";
 			this->button8->Size = System::Drawing::Size(100, 72);
@@ -203,7 +203,7 @@ namespace ETicaretYönetimSistemi {
 			this->button6->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
 			this->button6->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 6, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(162)));
-			this->button6->Location = System::Drawing::Point(721, 10);
+			this->button6->Location = System::Drawing::Point(717, 9);
 			this->button6->Margin = System::Windows::Forms::Padding(2);
 			this->button6->Name = L"button6";
 			this->button6->Size = System::Drawing::Size(100, 72);
